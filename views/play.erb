@@ -1,10 +1,10 @@
 <h2><%=@player_1_name%> vs. <%=@player_2_name%></h2>
 <p>
-<%=@player_1_name%>: 100 Hitpoints
+<%=@player_1_name%>: <%=$player1.points%> Hitpoints
 <p>
-<%=@player_2_name%>: 100 Hitpoints
+<%=@player_2_name%>: <%=$player2.points%> Hitpoints
 <p>
 
-  <form action="/confirmation">
+  <form action="/attack">
     <input type="submit" value="Attack Player 2">
   </form>
